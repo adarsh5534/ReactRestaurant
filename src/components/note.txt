@@ -1,0 +1,71 @@
+api call in js
+---------------
+
+AJAX 
+
+-Xmlhttps
+-fetch
+-asynch(f) await(c)
+
+redirection in react
+---------------------
+react-router-dom 
+-npm i  react-router-dom 
+import 
+{BrowserRouter  as Router       -  all routing need components
+,Routes                         - to set paths for each components
+,Route                          -more than one path
+} from 'react-router-dom'
+as used to shorten the module name
+
+useparams - hook used to accesss params from component url
+
+REDUX 
+---------
+
+coupling  -many connection bw parent and child component
+
+= props drillinng- in couplingif any intermediate have any errors all othr childs will not work
+ 
+to avoid props drilling we need to reduce  copling and make all the components independent 
+
+for this react introduced a new technology -  state management technology - REDUX
+
+
+redux process
+-------------
+
+create a new js file to keep the states , all the components can access the js  file 
+
+-components can access the datas from the js file but  they cant update datas in js file
+
+-Action =>  a file where all the logics to update the state 
+-Dispatch =>method used to dispatch the logic in action file when the component need state updation
+Reducer => update the datas in js file according to the payload responce get action file
+
+libraries to aply redux
+------------------------
+
+1.REDUX
+2.REACT-REDUX
+3.REDUX-THUNK
+
+npm i redux react-redux redux-thunk
+createStore() - method in REDUX  used to create store in js file
+              - 2 args
+              -1- Reducer
+              -2- middleware  ( used to make synchrounous redux into asynchrounous )
+redux is actually synchrounous
+
+applyMiddleware() - method in REDUX to apply middleware
+
+combineReducers() - method in REDUX used to combine all the reducers in js file 
+
+thunk - in REDUX-THUNK ,used to create middleware 
+
+spread opeator - used to convert object to array
+
+1. create store 
+2. apply the store in index.js  
+    -provider - its a tag used to  pass the store (react-redux)
+    
